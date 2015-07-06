@@ -182,4 +182,9 @@ static CGFloat IMAGE_HEIGHT = 320.0f;
     }
 }
 
+- (void)dealloc
+{
+    _mainScrollView.delegate = nil;
+}
+
 @end
